@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Campaigns</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<h2 style="text-align:center; margin-top:20px;">My Campaigns</h2>
+
+<div id="myCampaignsContainer"></div>
+
+<!-- EDIT MODAL -->
+<div id="editModal" class="modal">
+
+    <div class="modal-content">
+
+        <h3>Edit Campaign</h3>
+
+        <input type="text" id="editTitle" placeholder="Title">
+        <input type="number" id="editGoal" placeholder="Goal">
+        <input type="date" id="editDeadline">
+
+        <button onclick="saveEdit()">Save</button>
+        <button onclick="closeModal()">Cancel</button>
+
+    </div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/my-campaigns.js"></script>
+
+</body>
+
+</html>

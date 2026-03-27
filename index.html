@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CrowdFund</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <nav>
+        <h2>CrowdFund</h2>
+
+        <div id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="#about">About Us</a>
+            <a href="my-pledges.html">My Pledges</a>
+            <!-- <a href="create-campaign.html">Create Campaign</a> -->
+            <a href="#footer">Contact Us</a>
+            <a href="campaigns.html">Campaigns</a>
+        </div>
+
+        <div id="authArea">
+        </div>
+    </nav>
+    <hr>
+
+    <section class="hero">
+        <div class="layer">
+            <h1>Support Amazing Ideas </h1>
+            <p> Help creators bring their projects to life. Start a campaign or support one today.</p>
+            <div class="hero-buttons">
+                <button onclick="window.location.href='campaigns.html'">Explore Campaigns</button>
+                <button class="secondary-btn" onclick="handleCreateCampaign()"> Create Campaign</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>CrowdFund is a platform that helps creators turn their ideas into reality. We connect people who have great ideas with those who want to support them.</p>
+        </div>
+
+        <div class="features">
+
+            <div class="feature">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Our Vision</h3>
+                <p>Building a global community that supports innovation.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Our Impact</h3>
+                <p>Helping projects grow and reach their goals.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-users"></i>
+                <h3>Our Community</h3>
+                <p>Connecting creators with supporters worldwide.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mission">
+        <div class="container">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to empower creators and innovators by providing a platform
+                where ideas can come to life. We connect people who have vision with those
+                who believe in making a difference.
+            </p>
+        </div>
+        <div class="features">
+            <div class="feature">
+                <i class="fa-solid fa-rocket"></i>
+                <h3>Innovation</h3>
+                <p>We support creative and impactful ideas.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-handshake"></i>
+                <h3>Community</h3>
+                <p>We connect people who believe in change.</p>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Opportunity</h3>
+                <p>We help turn ideas into reality.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section class="featured">
+        <div class="cards" id="featuredContainer"></div>
+    </section>
+
+    <section class="cta">
+        <h2>Start Your Campaign Today</h2>
+        <p>Join us and make your idea come to life</p>
+        <button id="createBtn">Create Campaign</button>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>CrowdFund</h3>
+                <p>Empowering ideas and connecting people worldwide.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: support@crowdfund.com</p>
+                <p>Phone: +20 100 000 0000</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2026 CrowdFund Platform</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Campaigns</title>
+</head>
+
+<body>
+
+    <div id="toast"></div>
+
+    <section class="campaigns-page">
+
+        <button onclick="window.location.href='my-campaigns.html'">My Campaigns</button>
+
+        <div class="campaigns-header">
+
+            <h1>Campaigns</h1>
+
+            <div class="filters">
+
+                <input type="text" id="searchInput" placeholder="Search campaigns...">
+
+                <select id="filterCategory">
+                    <option value="">All Categories</option>
+                    <option value="Tech">Tech</option>
+                    <option value="Art">Art</option>
+                    <option value="Music">Music</option>
+                    <option value="Education">Education</option>
+                </select>
+
+            </div>
+
+        </div>
+
+        <div id="campaignsContainer"></div>
+
+    </section>
+
+    <script src="js/api.js"></script>
+    <script src="js/campaigns.js"></script>
+
+</body>
+
+</html>
