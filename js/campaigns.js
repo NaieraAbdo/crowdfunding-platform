@@ -20,31 +20,24 @@ async function displayCampaigns(campaigns) {
         const card = document.createElement("div");
         card.classList.add("card");
         card.innerHTML = `
-        <img src="${campaign.image || 'https://picsum.photos/300/200'}">
-
+        <img src="${campaign.image}">
         <div class="card-content">
-
             <h3 title="${campaign.title}">
                 ${campaign.title.length > 40 ? campaign.title.substring(0, 40) + "..." : campaign.title}
             </h3>
-
             <div class="meta">
                 <span>Goal: $${campaign.goal}</span>
                 <span class="percent">${progress}%</span>
             </div>
-
             <div class="progress">
                 <div class="progress-bar" style="width:${progress}%"></div>
             </div>
-
-            ${progress === 100 ? "<p style='color:green;'>Fully Funded 🎉</p>" : ""}
-
+            ${progress === 100 ? "<p style='color:green;'>Fully Funded </p>" : ""}
             <button onclick="window.location.href='campaign-details.html?id=${campaign.id}'">
                 View Details
             </button>
         </div>
         `;
-
         container.appendChild(card);
     }
 }

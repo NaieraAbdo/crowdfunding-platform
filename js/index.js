@@ -14,18 +14,13 @@ async function loadFeatured() {
         card.classList.add("card");
 
         card.innerHTML = `
-            <img src="${campaign.image || 'https://picsum.photos/300/200'}">
-
+            <img src="${campaign.image}">
             <h3>${campaign.title}</h3>
-
             <p>$${total} raised of $${campaign.goal}</p>
-
             <div class="progress">
                 <div class="progress-bar" style="width:${progress}%"></div>
             </div>
-
             ${progress === 100 ? "<p style='color:green;'>Fully Funded </p>" : ""}
-
             <button onclick="window.location.href='campaign-details.html?id=${campaign.id}'">
                 Donate
             </button>

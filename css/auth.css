@@ -9,8 +9,9 @@
 .auth form {
     background: white;
     padding: 40px;
+        margin: 50px auto;
     border-radius: 10px;
-    width: 350px;
+    width: 380px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
@@ -26,12 +27,18 @@
     margin-bottom: 15px;
     border: 1px solid #ddd;
     border-radius: 6px;
+    font-size: 15px;
 }
 
 .auth button {
     width: 100%;
     background: #2ecc71;
     color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
 .auth button:hover {
@@ -49,43 +56,13 @@
 }
 
 
-
 form {
-    width: 380px;
-    margin: 50px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-input,
-textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    font-size: 15px;
+    /* width: 380px; */
+    /* margin: 50px auto; */
+    /* background: white; */
+    /* padding: 30px; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
 }
 
 
-
-button {
-    background: #2ecc71;
-    color: white;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background: #27ae60;
-}

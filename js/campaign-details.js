@@ -7,25 +7,21 @@ const campaignId = params.get("id");
 async function loadCampaign() {
 
     const campaign = await getData(`campaigns/${campaignId}`);
-    const pledges = await getData(`pledges?campaignId=${campaignId}`);l
+    const pledges = await getData(`pledges?campaignId=${campaignId}`);
     const total = pledges.reduce((sum, p) => sum + Number(p.amount), 0);
     const progress = Math.min((total / campaign.goal) * 100, 100);
     const supporters = pledges.length;
 
     container.innerHTML = `
-        <img src="${campaign.image || 'https://picsum.photos/800/400'}" class="details-img">
-
+        <img src="${campaign.image }" class="details-img">
         <h2>${campaign.title}</h2>
-
         <p class="desc">${campaign.description}</p>
-
         <div class="info">
             <span>Goal: $${campaign.goal}</span>
             <span>Raised: $${total}</span>
             <span>${Math.floor(progress)}% funded</span>
             <span>${supporters} supporters</span>
         </div>
-
         <div class="progress">
             <div class="progress-bar" style="width:${progress}%"></div>
         </div>
